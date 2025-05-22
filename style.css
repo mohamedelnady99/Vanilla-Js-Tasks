@@ -1,0 +1,32 @@
+h1{
+    color: blue;
+    font-size: 2em;
+}
+p{
+    color: green;
+    font-size: 1.5em;
+}
+h2{
+    color: red;
+    font-size: 1.2em;
+}
+h3{
+    color: purple;
+    font-size: 1em;
+}
+h4{
+    color: orange;
+    font-size: 0.8em;
+}
+h5{
+    color: pink;
+    font-size: 0.6em;
+}
+h6{
+    color: brown;
+    font-size: 0.4em;
+}
+div{
+    color: black;
+    font-size: 1em;
+}
