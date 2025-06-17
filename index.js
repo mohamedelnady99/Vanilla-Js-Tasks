@@ -85,6 +85,7 @@ const nestedArray = [1, 2, [3, 4], [5, 6]];
 const flattenedArray = nestedArray.flat(); // flattens the nested array into a single-level array
 console.log(flattenedArray); // [ 1, 2, 3, 4, 5, 6 ]
 // flatMap for mapping each element using a mapping function and then flattening the result into a new array
+
 const flatMappedArray = nestedArray.flatMap(item => {
   return Array.isArray(item) ? item : [item]; // flattens the nested arrays while keeping non-array items as single elements
 });
@@ -95,3 +96,28 @@ console.log(filledArray); // [ 1, 2, 'filled', 'filled', 'filled', 'ahmwd', 'ali
 // copyWithin for shallow copying part of an array to another location in the same array
 const copiedArray = array.copyWithin(0, 2, 5); // copies elements from index 2 to index 5 to the beginning of the array
 console.log(copiedArray); // [ 'filled', 'filled', 'filled', 'ahmwd', 'ali', 122, 'ali' ]
+// entries for returning a new Array Iterator object that contains the key/value pairs for each index in the array
+const entriesIterator = array.entries(); // creates an iterator for the array entries
+
+
+const morenestedArray = [1, 2, [3, [4,5,6,7,8,9,[10,11]]], [5, 6]];
+const flattenedMoreNestedArray = morenestedArray.flat(9); // flattens the nested array to a depth of 3
+console.log(flattenedMoreNestedArray); // [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 5, 6 ]
+
+
+const Array1 =[1,2,3,4,5,6,10,7,8,9,2];
+function analyzeArray(arr) {
+  let Array1 = arr || Array1; // Use the provided array or default to Array1
+  
+// Array1.sort((a,b) => a-b);
+  // return {
+  //   sortedArray: Array1,
+  //   min: Array1[0],
+  //   max: Array1[Array1.length - 1],
+  //   average: Array1.reduce((acc, val) => acc + val, 0) / Array1.length,
+  //   sum: Array1.reduce((acc, val) => acc + val, 0)
+  // }
+}
+// console.log(analyzeArray());
+
+analyzeArray(...Array1);
